@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <head>
   <title>Is it Joanna's Birthday?</title>
+  <style>
+div {
+  text-align: justify;
+  font-size: 15vw;
+}
+div:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+  </style>
 </head>
 <html>
   <body onload="
@@ -10,6 +21,8 @@
   } else {
     document.getElementById('birthday').innerText = 'No'
   }">
-    <h1 style="text-align: center;" id="birthday">I don't know...</h1>
+    <div>
+      <h1 style="text-align: center;" id="birthday">...</h1>
+    </div>
   </body>
 </html>
